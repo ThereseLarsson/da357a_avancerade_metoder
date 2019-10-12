@@ -1,5 +1,16 @@
 # da357a_avancerade_metoder
 
-Kurs: Avancerade metoder för text- och bildbehandling (da357a).
+## About
+Various assignments for processing text and images. includes:
+- Tries and suffix arrays
+- Huffman coding
+- Text search
+- Manipulating images in different ways, e.g.
+  - edge detection
+  - alter brightness
+  - alter contrast
+  - grayscaling images
 
-Gick kursen: Termin 3 Systemutvecklare, ht2017. 
+Course: Avancerade metoder för text- och bildbehandling (da357a).
+
+Went the course: Termin 3 Systemutvecklare at Malmö University, ht2017. 
