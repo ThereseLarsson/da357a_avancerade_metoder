@@ -22,6 +22,9 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+/**
+ * gives incorrect result, but cool and interesting effect nonetheless
+ */
 public class PointOperation {
 	private static int contrast;
 	private static int brightness;

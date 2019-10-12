@@ -4,11 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
-import java.awt.Point;
 import java.awt.image.BufferedImage;
-import java.awt.image.Raster;
-import java.awt.image.SampleModel;
-import java.awt.image.WritableRaster;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
@@ -18,13 +14,12 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-public class PointOperation2 {
+public class PointOperationCorrect {
 	private static double contrast;
 	private static int brightness;
 	private static BufferedImage imageOriginal;
@@ -34,11 +29,10 @@ public class PointOperation2 {
 	
 	/**
 	 * constructor
-	 * @param contrast
-	 * @param brightness
-	 * @throws IOException 
+	 * @param filename
+	 * @throws IOException
 	 */
-	public PointOperation2(String filename) throws IOException {
+	public PointOperationCorrect(String filename) throws IOException {
 		rand = new Random();
 		File file = new File(filename);
 		imageOriginal = ImageIO.read(file);
@@ -170,7 +164,7 @@ public class PointOperation2 {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		PointOperation2 po = new PointOperation2("files/flower.png");
+		PointOperationCorrect po = new PointOperationCorrect("files/flower.png");
 		po.alterImage();
 		po.displayImages();
 	}

@@ -124,7 +124,7 @@ public class FlipImage2 {
 			String filename = "files/flower.png";
 			BufferedImage img = ImageIO.read(new File(filename));
 			FlipImage2 flip = new FlipImage2(img);
-			ImageIO.write(flip.getImage(), "PNG", new File("files/flippedImage.png"));
+			//ImageIO.write(flip.getImage(), "PNG", new File("files/flippedImage.png"));
 			
 			flip.displayImage();
 			

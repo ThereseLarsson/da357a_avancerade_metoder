@@ -162,13 +162,19 @@ public class SuffixArray {
 	 * prints the suffix array
 	 */
 	public void printArray() {
-		System.out.println("Original text: " + "'" + originalText + "'");
+		System.out.println();
+		System.out.println("ORIGINAL TEXT: " + "'" + originalText + "'");
 		System.out.println("SUFFIX ARRAY IN ORDER: " + Arrays.toString(suffixArray));
-		System.out.println("SUFFIX \t INDEX");
+		System.out.println("-----------------------------------------------------------------------------");
+		System.out.printf("%10s %20s", "SUFFIX", "STARTS AT INDEX");
+		System.out.println();
+		System.out.println("-----------------------------------------------------------------------------");
+
 		for (int i = 0; i < length; i++) {
-			System.out.println(suffixArray[i] + "\t" + indexArray[i]);
+			System.out.format("%10s %20s", suffixArray[i], indexArray[i]);
+			System.out.println();
 		}
-		System.out.println("----------------" + "\n" + "----------------" + "\n");
+		System.out.println("-------------------------------------");
 	}
 	
 	/**
