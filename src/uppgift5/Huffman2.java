@@ -103,11 +103,17 @@ public class Huffman2 {
 	 */
 	public void printData() {
 		int bitsum = 0;
-		System.out.println("Input: " + string);
-		System.out.println("-----------------------------------------------");
-		System.out.println("SYMBOL\tFREQ.\tHUFFMAN CODE");
+		System.out.println();
+		System.out.println("INPUT: " + string);
+		System.out.println("-----------------------------------------------------------------------------");
+		System.out.printf("%10s %15s %20s", "SYMBOL", "FREQ.", "HUFFMAN CODE");
+		System.out.println();
+		System.out.println("-----------------------------------------------------------------------------");
+
 		for(Character c: frequencyMap.keySet()) {
-			System.out.println(c + "\t" + frequencyMap.get(c) + "\t" + codeMap.get(c)); //codeHereLater --> codeMap.get(c);
+			System.out.format("%10s %15s %20s", c, frequencyMap.get(c), codeMap.get(c));
+			System.out.println();
+			//System.out.println(c + "\t" + frequencyMap.get(c) + "\t" + codeMap.get(c)); //codeHereLater --> codeMap.get(c);
 			bitsum += frequencyMap.get(c) * codeMap.get(c).length();
 		}
 		System.out.println("-----------------------------------------------");
