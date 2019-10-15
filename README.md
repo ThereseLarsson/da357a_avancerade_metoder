@@ -1,7 +1,7 @@
 # da357a_avancerade_metoder
 
 ## About
-Various assignments completed during bachelor education (see below) for processing text and images. Includes:
+Various assignments completed during a cource about advanced methods for processing text and images. Includes:
 - Tries and suffix arrays
 - Huffman coding
 - Text search
