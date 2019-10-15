@@ -11,6 +11,6 @@ Various assignments for processing text and images. includes:
   - alter contrast
   - grayscaling images
 
-Course: Avancerade metoder för text- och bildbehandling (da357a).
+Course: Avancerade metoder för text- och bildbehandling (da357a) (eng. Advanced methods for text and image processing).
 
 Went the course: Termin 3 Systemutvecklare at Malmö University, ht2017. 
